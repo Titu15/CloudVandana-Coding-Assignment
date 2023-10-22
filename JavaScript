@@ -1,0 +1,61 @@
+/* A. Take a sentence as an input and reverse every word in that sentence.
+    a. Example - This is a sunny day > shiT si a ynnus yad.   */
+
+function reverseWords(sentence) {
+    let reversedSentence = '';
+    let wordStart = 0;
+
+    for (let i = 0; i <= sentence.length; i++) {
+        if (i === sentence.length || sentence[i] === ' ') {
+            let word = '';
+            for (let j = i - 1; j >= wordStart; j--) {
+                word += sentence[j];
+            }
+            reversedSentence += word;
+            if (i < sentence.length) {
+                reversedSentence += ' ';
+            }
+
+            wordStart = i + 1;
+        }
+    }
+
+    return reversedSentence;
+}
+
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter a sentence: ', (inputSentence) => {
+    const reversedSentence = reverseWords(inputSentence);
+    console.log('Reversed sentence: ' + reversedSentence);
+    rl.close();
+});
+
+
+_________________________________________________________________________________________________________________________________________________________________
+
+
+/* B. Perform sorting of an array in descending order. */
+
+function descendingSort(arr) {
+    var n = arr.length;
+    for (var i = 0; i < n - 1; i++) {
+        for (var j = 0; j < n - i - 1; j++) {
+            if (arr[j] < arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+var array = [5, 2, 9, 1, 5, 6];
+descendingSort(array);
+for (var i = 0; i < array.length; i++) {
+    console.log(array[i] + " ");
+}
