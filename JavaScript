@@ -24,15 +24,15 @@ function reverseWords(sentence) {
 }
 
 const readline = require('readline');
-const rl = readline.createInterface({
+const re = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question('Enter a sentence: ', (inputSentence) => {
+re.question('Enter a sentence: ', (inputSentence) => {
     const reversedSentence = reverseWords(inputSentence);
     console.log('Reversed sentence: ' + reversedSentence);
-    rl.close();
+    re.close();
 });
 
 
