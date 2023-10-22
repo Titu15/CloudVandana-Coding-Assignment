@@ -1,0 +1,65 @@
+.container{
+    width: 500px;
+    height: 430px;
+    background-color: rgb(79, 85, 85);
+    margin : 80px 370px;
+    border-radius: 10px;
+}
+#Heading{
+    padding: 15px 160px;
+    color: aqua;
+    font-size: 40px;
+}
+.innerpart{
+    width: 350px;
+    height: 280px;
+    background-color: rgb(125, 113, 96);
+    margin-left: 73px;
+}
+.firstRow{
+    display: flex;
+}
+.input{
+    width: 270PX;
+    height: 55px;
+    background-color: azure;
+    border: 10px;
+    border-color: aliceblue;
+    font-size: 25px;
+}
+#AC{
+    width: 80px;
+    height: 57px;
+    background-color: rgb(54, 177, 144); 
+    color: antiquewhite;
+    border: 10px;
+    border-color:  rgb(54, 177, 144); 
+}
+#ALL{
+    width: 80px;
+    height: 57px;
+    background-color: rgb(139, 147, 145); 
+    color: antiquewhite;
+    border: 10px;
+    border-color:  rgb(139, 147, 145); 
+}
+#ABC{
+    width:97px;
+    height: 57px;
+    background-color: rgb(33, 31, 31);
+    border: 10px;
+    border-color: rgb(33, 31, 31);
+    color: antiquewhite;
+}
+.secondRow{
+    display: flex;
+}
+.thirdRow{
+    display: flex;
+}
+.forthRow{
+    display: flex;
+}
+.fifthRow{
+    display: flex;
+}
