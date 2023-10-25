@@ -1,0 +1,129 @@
+.container {
+    height: 500px;
+    width: 520px;
+    background-color: rgb(52, 153, 241);
+    margin: 20px 370px;
+}
+
+.innerpart {
+    height: 390px;
+    width: 460px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.name {
+    display: flex;
+}
+
+.nameBox {
+    display: flex;
+}
+
+#name, #lname {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#name {
+    margin-left: 15px;
+}
+
+#lname {
+    margin-left: 150px;
+}
+
+#fname, #Lname {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#Lname {
+    margin-left: 60px;
+}
+
+.dob p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.dob {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.country {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.Profession {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.Mobile {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.Email {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.button {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Styles for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
